@@ -5,4 +5,3 @@ int main(){
    int **pptr=&ptr;
    printf("%d",**pptr);
     return 0;
-}

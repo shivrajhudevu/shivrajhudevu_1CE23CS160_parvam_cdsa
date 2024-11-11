@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main(){
-    int num=0;
-    int res=fibonacci(num);
+    int num=6;
+    int res=factorial(num);
     printf("%d",res);
 return 0;
 }   
-int fibonacci(int n){
-    if (n==4){
+int factorial(int n){
+    if (n==0){
         return 1;
     }
     else{
-        return n+fibonacci(n+1);
+        return n*factorial(n-1);
     }
 }
